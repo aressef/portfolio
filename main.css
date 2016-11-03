@@ -1,0 +1,247 @@
+/* Main CSS file for Personal Portfolio Webpage. Coded by Ryan Fuhrman */
+
+body {
+  font-family: "Avenir Next", "Calibri", sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 10 auto;
+  padding-top: 15px;
+}
+
+.navbar ul li {
+  display: inline-flex;
+  padding-right: 5px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 7px 5px 7px;
+
+}
+
+.navbar a:hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+#nav-left a {
+  color: #6bc5e1;
+}
+
+.nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.nav-right:last-child {
+  margin-right: 40px;
+}
+
+.jumbotron {
+  background-image: url("https://dl.dropbox.com/s/sb9850wc4g71vwd/backgroundpatern.png?dl=0"); /* Background pattern from subtlepatterns.com */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  min-height: 100%; min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron ul {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.subhead li:before {
+  content: " | ";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.subhead li:first-child:before {
+  content: none;
+}
+
+.jumbo-social-links li{
+  padding: 10px;
+}
+
+.jumbolinks .subhead li:before {
+  content: none;
+}
+
+.jumbotron i {
+  padding-left: 5px;
+  color: #fff;
+}
+
+.jumbotron #btn {
+  color: #000;
+  background-color: #fff;
+}
+
+#about {
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+#about h2 {
+  padding-bottom: 30px;
+}
+
+#about .column {
+  font-size: 16px;
+  line-height: 25px;
+  -webkit-column-count: 2;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#about img {
+  height: auto;
+  width: 175px;
+  border-radius: 8px;
+  right: 0px;
+  margin-right: 25px;
+}
+
+#aboutText {
+    margin-left: 25px;
+    height: auto;
+    width: 300px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 70px;
+  border-top-width: 1px;
+  border-top-color: #ccc;
+  border-top-style: solid;
+}
+
+#projects h2 {
+  padding-bottom: 30px;
+}
+
+#projects img {
+  height: 200px;
+  width: 300px;
+}
+
+#projects .img-text {
+  background: rgba(0,0,0,0.75);
+  color: white;
+  text-align: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 201px;
+  margin-top: 4px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#projects .img-text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .img-text:hover {
+  opacity: 1;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top-width: 1px;
+  border-top-color: #ccc;
+  border-top-style: solid;
+}
+
+#contact p {
+  padding-bottom: 10px;
+}
+
+#contact ul li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+#contact i {
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  border-top: solid 1px;
+  padding-top: 10px;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 991px) {}
+
+/* Mobile */
+
+@media screen and (max-width: 579px) {
+
+  #about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about .column {
+    -webkit-column-count: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #about img {
+    margin-bottom: 15px;
+  }
+}
